@@ -1,6 +1,6 @@
 ﻿namespace FireTest
 {
-    public class RequestInfo
+    public class RunCommandArgs
     {
         public string Env { get; set; }
         public string Url { get; set; }

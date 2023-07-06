@@ -1,12 +1,20 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
 	<PackAsTool>true</PackAsTool>
 	<ToolCommandName>FireTest</ToolCommandName>
+	<Title>FIreTest</Title>
+	<Authors>Sangeeth Nandakumar</Authors>
+	<Company>Twileloop</Company>
+	<Description>FireTest is  .NET CLI tool that can be used to test the perfomance of an API</Description>
+	<PackageProjectUrl>https://github.com/sangeethnandakumar/FireTest</PackageProjectUrl>
+	<PackageIcon>logo.png</PackageIcon>
+	<RepositoryUrl>https://github.com/sangeethnandakumar/FireTest</RepositoryUrl>
+	<RepositoryType>git</RepositoryType>
+	<PackageTags>firetest, perfomance, k6</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,6 +22,13 @@
     <PackageReference Include="Humanizer" Version="2.14.1" />
     <PackageReference Include="Spectre.Console" Version="0.47.0" />
     <PackageReference Include="YamlDotNet" Version="13.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

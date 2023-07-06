@@ -4,7 +4,23 @@
       "commandName": "WSL2",
       "distributionName": ""
     },
-    "Test": {
+    "RunTests": {
+      "commandName": "Project",
+      "commandLineArgs": "run car.yml -p 5 -i 5"
+    },
+    "List": {
+      "commandName": "Project",
+      "commandLineArgs": "list"
+    },
+    "Create": {
+      "commandName": "Project",
+      "commandLineArgs": "create 'sample.yml'"
+    },
+    "Help": {
+      "commandName": "Project",
+      "commandLineArgs": "--help"
+    },
+    "Normal": {
       "commandName": "Project"
     }
   }
